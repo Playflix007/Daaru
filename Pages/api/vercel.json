@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "pages/api/generateM3U.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/generateM3U",
+      "dest": "/pages/api/generateM3U.js"
+    }
+  ]
+}
